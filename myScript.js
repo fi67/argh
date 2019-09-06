@@ -6,5 +6,7 @@ threebox.addEventListener("change",changed);
 
 function changed(event) {
 console.log(this.dataset.number);
-container.childNodes[this.dataset.number].style.visibility="hidden";
+console.log(this);
+console.log(container.children.length);
+container.children[this.dataset.number].style.visibility="hidden";
 }
